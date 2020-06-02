@@ -20,17 +20,10 @@
 
 <body>
   <div class="container" style="max-width: 30rem">
-    <h1>Welcome <%= user && user.name %> </h1>
-    <% if (!user) { %> 
-      <a href="/login" class="btn btn-primary">Login</a>
-      or
-      <a href="/register" class="btn btn-success">Register</a>
-    <% } else { %>
-      <p><a href="/protected">
-        Click here</a> to see protected page
-      </p>
-      <a href="/logout" class="btn btn-secondary">Logout</a>
-    <% } %>
+    <h1>Welcome</h1>
+    <a href="/login" class="btn btn-primary">Login</a>
+    or
+    <a href="/register" class="btn btn-success">Register</a>
   </div>
 </body>
 

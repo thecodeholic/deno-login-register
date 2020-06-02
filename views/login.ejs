@@ -21,11 +21,6 @@
 <body>
   <div class="container" style="max-width: 30rem">
     <h1>Login to your account</h1>
-    <% if (error) { %>
-      <div class="alert alert-danger">
-        <%= error %>
-      </div>
-    <% } %>
     <form action="/login" method=post>
       <div class="form-group">
         <label>Username</label>
